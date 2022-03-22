@@ -17,6 +17,7 @@ Realtime Tesla Clone App with React, Firebase, and MaterialUI
 - React
 - Firebase
 - MaterialUI
+- Styled Components
 
 ### Installing
 
