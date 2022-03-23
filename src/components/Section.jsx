@@ -45,6 +45,7 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
 `;
 
 const Title = styled.h1`
@@ -96,6 +97,7 @@ const RightButton = styled(Button)`
 const DownArrow = styled.img`
   height: 40px;
   animation: animateDown infinite 1.5s;
+  cursor: pointer;
 `;
 
 const Buttons = styled.div`
