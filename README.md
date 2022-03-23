@@ -1,25 +1,21 @@
 # Tesla 🚀
 
-Tesla App Clone with React & Firebase
-
 ## 🔴 Live Demo
 
 Not live yet...
 
 ## Description
 
-Realtime Tesla Clone App with React, Firebase, and MaterialUI
+Tesla App Clone with React
 
 ## Getting Started
 
 ### Dependencies
 
 - React
-- Redux
-- Redux Toolkit
-- Firebase
-- MaterialUI
+- MaterialUI Icons
 - Styled Components
+- React Reveal
 
 ### Installing
 
