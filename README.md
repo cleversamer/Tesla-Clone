@@ -15,6 +15,8 @@ Realtime Tesla Clone App with React, Firebase, and MaterialUI
 ### Dependencies
 
 - React
+- Redux
+- Redux Toolkit
 - Firebase
 - MaterialUI
 - Styled Components

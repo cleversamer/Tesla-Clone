@@ -1,7 +1,15 @@
 import React from "react";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import "./css/app.css";
 
 const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <div className="app">
+      {/* <Header /> */}
+      <Home />
+    </div>
+  );
 };
 
 export default App;
