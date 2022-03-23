@@ -31,7 +31,7 @@ Realtime Tesla Clone App with React, Firebase, and MaterialUI
 
 ## Help
 
-- No problems detected yet
+- You may face an issue when installing dependencies, so write on the terminal `npm install --force` to avoid any errors.
 
 ## Authors
 
