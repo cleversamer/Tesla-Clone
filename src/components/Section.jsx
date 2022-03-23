@@ -1,18 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 
-const Section = () => {
+const Section = ({
+  title,
+  description,
+  leftBtnText,
+  rightBtnText,
+  backgroundImg,
+}) => {
   return (
-    <Wrap>
+    <Wrap bgImg={backgroundImg}>
       <ItemText>
-        <h1>Model S</h1>
-        <p>Order Online for Touchless Delivery</p>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
       </ItemText>
 
       <Buttons>
         <ButtonGroup>
-          <LeftButton>Custom Order</LeftButton>
-          <RightButton>Existing Inventory</RightButton>
+          <LeftButton>{leftBtnText}</LeftButton>
+          {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
         </ButtonGroup>
 
         <DownArrow src="images/down-arrow.svg" alt="" />
@@ -26,7 +32,7 @@ export default Section;
 const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
-  background-image: url(images/model-s.jpg);
+  background-image: ${({ bgImg }) => `url(images/${bgImg})`};
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -34,6 +40,15 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+`;
+
+const Title = styled.h1`
+  text-transform: capitalize;
+`;
+
+const Description = styled.p`
+  margin-top: 10px;
+  text-transform: capitalize;
 `;
 
 const ItemText = styled.div`
@@ -44,6 +59,9 @@ const ItemText = styled.div`
 const ButtonGroup = styled.div`
   display: flex;
   margin-bottom: 30px;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const Button = styled.div`
@@ -64,10 +82,13 @@ const Button = styled.div`
 
 const LeftButton = styled(Button)``;
 
-const RightButton = styled(Button)``;
+const RightButton = styled(Button)`
+  background-color: #fff;
+  opacity: 0.65;
+  color: #000;
+`;
 
 const DownArrow = styled.img`
-  margin-top: 20px;
   height: 40px;
   animation: animateDown infinite 1.5s;
 `;
