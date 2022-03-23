@@ -1,12 +1,11 @@
 import React from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import "./css/app.css";
 
 const App = () => {
   return (
     <div className="app">
-      {/* <Header /> */}
+      <Header />
       <Home />
     </div>
   );
